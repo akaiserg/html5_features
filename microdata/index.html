@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microdata</title>
+</head>
+<body>
+
+<div itemscope itemtype="http://data-vocabulary.org/Organization">
+        <h1 itemprop="name">Hendershot's Coffee Bar</h1>
+        <p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+            <span itemprop="street-address">1560 Oglethorpe Ave</span>,
+            <span itemprop="locality">Athens</span>,
+            <span itemprop="region">GA</span>.
+        </p>
+</div>
+
+<!--
+The first is essentially just a top level marker, it tells the search engine spider that you’re about to define something in the following nested tags.
+The itemtype attribute tells the spider what you’re defining — in this case, an organization.   
+-->
+
+</body>
+</html>

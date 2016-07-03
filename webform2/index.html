@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>web form 2.0</title>
+
+
+
+</head>
+<body>
+<form name="local_form">
+
+    <p>
+        Date : <input type="date" name="date" />
+    </p>
+
+    <p>
+        datetime-local : <input type="datetime-local" name="datetime-local" />
+    </p>
+
+    <p>
+       month : <input type="month" name="month" />
+    </p>
+
+    <p>
+        week : <input type="week" name="week" />
+    </p>
+
+    <p>
+        time : <input type="time" name="time" />
+    </p>
+
+    <p>
+        number : <input type="number" name="number" />
+    </p>
+
+    <p>
+        range : <input type="range" name="range" />
+    </p>
+
+    <p>
+        color : <input type="color" name="color" />
+    </p>
+
+    <p>
+        search : <input type="search" name="search" />
+    </p>
+
+    <p>
+        place holder : <input type="email" name="newinput" placeholder="email@example.com"/>
+    </p>
+
+    <p>
+       output : <input type="text" name="newinput" id="newinput_id" />
+        <input type="button" value="Result"  onclick="outPut();"/>
+        <output name="result">--</output>
+        <script type="text/javascript">
+            function outPut(){
+                document.forms["local_form"]["result"].value=document.getElementById("newinput_id").value;
+            }
+        </script>
+    </p>
+
+
+    <p>
+        autofocus : <input type="email" name="email" placeholder="email@example.com" autofocus/>
+    </p>
+
+    <p>
+        required : <input type="email" name="email2" placeholder="email@example.com"  required/>
+        <input type="submit" value="submit" />
+    </p>
+
+</form>
+
+
+
+</body>
+</html>
