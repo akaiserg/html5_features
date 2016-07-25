@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<p id="p_id">
+
+
+</p>
+
+</body>
+<script>
+    var messageEventHandler = function(event){
+        // check that the origin is one we want.
+        if(event.origin == 'http://127.0.0.1:8884'){
+            //alert(event.data);
+            document.getElementById("p_id").innerHTML="Message: "+event.data;
+        }
+        event.source.postMessage("I got your message: " +event.data,event.origin);
+
+    }
+    window.addEventListener('message', messageEventHandler,false);
+
+
+
+</script>
+</html>
